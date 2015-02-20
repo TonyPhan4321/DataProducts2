@@ -1,0 +1,60 @@
+Body Mass Index Calculator
+========================================================
+author: Trungnhan Phan
+date: 
+
+
+BMI, the simple tool
+========================================================
+
+Body Mass Index is an inexpensive and easy to use screening tool for weight related health issues such as overweight and obesity.
+
+BMI was designed for classifying physically inactive people having an average body composition, it measures weight to height ratio, not addressing the muscle to fat ratio so it maybe misleading in case of athletes who have much higher muscle to fat ratio. 
+
+Regardless of this short coming, BMI is widely used since it correlates direcly to measurements of body fat.
+
+How is BMI calculated
+========================================================
+
+Body Mass Index (BMI) is calculated from weight divided by the square of height, multiply by 703 if weight is in lb and height in inch.
+
+```{r}
+library(knitr)
+Weight <- 190
+Height <- 72
+bmi <- Weight*703 / Height^2
+
+cat(bmi)
+
+```
+
+How to use the calculator
+========================================================
+
+
+- Enter your weight in lb
+- Enter your height in inch
+- Click Submit
+- Your Body Mass Index will be displayed on the right
+
+
+
+Interprete the results
+========================================================
+
+
+BMI              Weight Status
+------------------------------
+
+
+Below 18.5       **Underweight**
+
+18.5 - 24.9      **Normal**
+
+25.0 - 29.9      **Overweight**
+
+30.0 and Above   **Obese**
+
+Remember BMI is just a screening tool, not a diagnostic one so further assessments is required to determine weight problems.
+
+
